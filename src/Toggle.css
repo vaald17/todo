@@ -1,0 +1,33 @@
+.toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    height: 30px;
+    width: 75px;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(151, 151, 151);
+    /* filter: drop-shadow(0 19px 28px white); */
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        transition: left 0.3s;
+    }
+
+    &.light {
+        background-color: rgb(150, 150, 150);
+
+        &::after {
+            left: 50px;
+        }
+    }
+}

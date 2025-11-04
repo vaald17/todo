@@ -1,0 +1,12 @@
+.nums {
+    height: 25px;
+    width: 280px;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+
+    & .num {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+:root {
+  color-scheme: light dark;
+
+
+
+  &[data-theme='dark'] {
+    color-scheme: dark;
+    --bgc: rgb(31, 31, 31);
+  }
+
+  &[data-theme='light'] {
+    color-scheme: light;
+    --bgc: rgb(231, 231, 231);
+  }
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aliceblue; */
+  background-color: var(--bgc);
+  color: black;
+  /* transition: background-color 0.3s ease; */
+}
+
+input {
+  color: black;
+}
+
+
+/* @property --color1 {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+@property --color2 {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 120;
+}
+
+@property --color3 {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 240;
+}
+
+@property --angle {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+:root {
+  --angle: 0;
+  --color1: 0;
+  --color2: 120;
+  --color3: 240;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+  background-image: linear-gradient(45deg,
+      hsl(var(--color1), 100%, 50%, .3) 0%,
+      hsl(var(--color2), 100%, 50%, .3) 50% 50%,
+      hsl(var(--color3), 100%, 50%, .3) 100%);
+  background-attachment: fixed;
+  animation: angleRotate 30s linear infinite, rotateColor1 5s linear infinite, rotateColor2 5s linear infinite, rotateColor3 5s linear infinite;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -900;
+  backdrop-filter: blur(80px);
+}
+
+@keyframes angleRotate {
+  from {
+    --angle: 0;
+  }
+
+  to {
+    --angle: 360;
+  }
+}
+
+@keyframes rotateColor1 {
+  from {
+    --color1: 0;
+  }
+
+  to {
+    --color1: 360;
+  }
+}
+
+@keyframes rotateColor2 {
+  from {
+    --color2: 120;
+  }
+
+  to {
+    --color2: 480;
+  }
+}
+
+@keyframes rotateColor3 {
+  from {
+    --color3: 240;
+  }
+
+  to {
+    --color3: 600;
+  }
+} */
